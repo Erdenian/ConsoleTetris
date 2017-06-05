@@ -33,9 +33,6 @@
     <ClCompile Include="Color.cpp">
       <Filter>Файлы исходного кода\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>Файлы исходного кода\Engine</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics2D.cpp">
       <Filter>Файлы исходного кода\Engine</Filter>
     </ClCompile>
@@ -48,9 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.h">
-      <Filter>Файлы ресурсов\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObject.h">
       <Filter>Файлы ресурсов\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Graphics2D.h">
