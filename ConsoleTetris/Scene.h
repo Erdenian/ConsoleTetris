@@ -4,7 +4,9 @@
 
 class Scene
 {
-private:
+public:
+	void run();
+
 	std::vector<GameObject> gameObjects;
 };
 

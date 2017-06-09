@@ -5,18 +5,23 @@
 #include "Graphics2D.h"
 #include "Screen.h"
 #include "Vector2.h"
+#include "Scene.h"
+#include "GameObject.h"
 
 int main()
 {
-	Screen& screen = Screen::getInstance();
+	Graphics2D heroGraphics(3, 4);
+	heroGraphics.fill(219);
+	heroGraphics.setColor(0, 0, Color(' ', ' '));
+	heroGraphics.setColor(2, 0, Color(' ', ' '));
+	heroGraphics.setColor(0, 2, Color(' ', ' '));
+	heroGraphics.setColor(2, 2, Color(' ', ' '));
+	heroGraphics.setColor(1, 3, Color(' ', ' '));
 
-	Graphics2D hero(3, 4);
-	hero.fill(219);
-	hero.setColor(0, 0, Color(' ', ' '));
-	hero.setColor(2, 0, Color(' ', ' '));
-	hero.setColor(0, 2, Color(' ', ' '));
-	hero.setColor(2, 2, Color(' ', ' '));
-	hero.setColor(1, 3, Color(' ', ' '));
+	Screen& screen = Screen::getInstance();
+	Scene scene;
+	GameObject hero(Vector2(10, 10), heroGraphics);
+	scene.gameObjects.push_back(hero);
 
 	int x = 1, y = 1;
 
@@ -39,13 +44,13 @@ int main()
 		if (GetAsyncKeyState(VK_DOWN)) y++;
 
 		if (x < 1) x = 1;
-		else if (x + hero.getWidth() >= screen.getWidth()) x = screen.getWidth() - hero.getWidth() - 1;
+		else if (x + heroGraphics.getWidth() >= screen.getWidth()) x = screen.getWidth() - heroGraphics.getWidth() - 1;
 		if (y < 1) y = 1;
-		else if (y + hero.getHeigth() >= screen.getHeigth()) y = screen.getHeigth() - hero.getHeigth() - 1;
+		else if (y + heroGraphics.getHeigth() >= screen.getHeigth()) y = screen.getHeigth() - heroGraphics.getHeigth() - 1;
 
 		screen.setImage(0, 0, background);
 
-		screen.drawImage(x, y, hero);
+		screen.drawImage(x, y, heroGraphics);
 		screen.print();
 
 		Sleep(100);

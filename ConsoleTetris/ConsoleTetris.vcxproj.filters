@@ -54,6 +54,9 @@
     <ClCompile Include="Vector3.cpp">
       <Filter>Файлы исходного кода\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="TestScript.cpp">
+      <Filter>Файлы исходного кода\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.h">
@@ -76,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="Vector3.h">
       <Filter>Заголовочные файлы\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScript.h">
+      <Filter>Заголовочные файлы\Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
