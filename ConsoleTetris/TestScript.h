@@ -4,6 +4,6 @@
 class TestScript : public Script
 {
 public:
+	void onStart();
 	void onUpdate();
 };
-

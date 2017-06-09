@@ -5,8 +5,10 @@
 class Scene
 {
 public:
+	~Scene();
+
 	void run();
 
-	std::vector<GameObject> gameObjects;
+	std::vector<GameObject*> gameObjects;
 };
 

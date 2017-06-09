@@ -9,3 +9,9 @@ GameObject::~GameObject()
 		delete scripts[i];
 	}
 }
+
+void GameObject::addScript(Script* script)
+{
+	script->gameObject = this;
+	this->scripts.push_back(script);
+}

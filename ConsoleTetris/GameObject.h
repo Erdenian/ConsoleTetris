@@ -7,29 +7,34 @@ class Script;
 
 class GameObject
 {
+	friend class Scene;
+
 public:
 	GameObject(Vector2 position, Graphics2D graphics);
 	~GameObject();
 
+	void addScript(Script* script);
+
 	Vector2 position;
 	Graphics2D graphics;
+
+private:
 	std::vector<Script*> scripts;
 };
 
 class Script
 {
+	friend class GameObject;
+
 public:
-	virtual void onAwake() = 0;
 	virtual void onStart() = 0;
 	virtual void onUpdate() = 0;
-	virtual void onFinish() = 0;
-	virtual void onDestroy() = 0;
 
 	GameObject* getGameObject()
 	{
-		return &gameObject;
+		return gameObject;
 	}
 
 private:
-	GameObject gameObject;
+	GameObject* gameObject;
 };
