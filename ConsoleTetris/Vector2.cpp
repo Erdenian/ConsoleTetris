@@ -10,6 +10,14 @@ bool Vector2::operator==(const Vector2& obj) const
 	return ((x == obj.x) && (y == obj.y));
 }
 
+Vector2 Vector2::operator-(const Vector2& rightVector) const {
+	return Vector2(x - rightVector.x, y - rightVector.y);
+}
+
+Vector2 Vector2::operator+(const Vector2& rightVector) const {
+	return Vector2(x + rightVector.x, y + rightVector.y);
+}
+
 inline double Vector2::magnitude()
 {
 	return sqrt(sqrMagnitude());
