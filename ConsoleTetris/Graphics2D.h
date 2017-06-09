@@ -5,6 +5,7 @@
 class Graphics2D
 {
 public:
+	Graphics2D();
 	Graphics2D(size_t width, size_t height);
 	Graphics2D(const Graphics2D &obj);
 	~Graphics2D();

@@ -5,6 +5,13 @@
 #include <stdexcept>
 #include "Color.h"
 
+Graphics2D::Graphics2D()
+{
+	width_ = 0;
+	height_ = 0;
+	graphics_ = nullptr;
+}
+
 Graphics2D::Graphics2D(size_t width, size_t height)
 {
 	width_ = width;
