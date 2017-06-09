@@ -9,6 +9,9 @@ public:
 	inline double magnitude();
 	inline double sqrMagnitude();
 
+	Vector2 operator-(const Vector2& rightVector) const;
+	Vector2 operator+(const Vector2& rightVector) const;
+
 	double x, y;
 };
 
