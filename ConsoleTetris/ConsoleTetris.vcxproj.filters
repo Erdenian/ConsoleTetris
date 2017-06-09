@@ -57,6 +57,15 @@
     <ClCompile Include="TestScript.cpp">
       <Filter>Файлы исходного кода\Game</Filter>
     </ClCompile>
+    <ClCompile Include="EnemyScript.cpp">
+      <Filter>Файлы исходного кода\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerScript.cpp">
+      <Filter>Файлы исходного кода\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreScript.cpp">
+      <Filter>Файлы исходного кода\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.h">
@@ -81,6 +90,15 @@
       <Filter>Заголовочные файлы\Engine</Filter>
     </ClInclude>
     <ClInclude Include="TestScript.h">
+      <Filter>Заголовочные файлы\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyScript.h">
+      <Filter>Заголовочные файлы\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerScript.h">
+      <Filter>Заголовочные файлы\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreScript.h">
       <Filter>Заголовочные файлы\Game</Filter>
     </ClInclude>
   </ItemGroup>
