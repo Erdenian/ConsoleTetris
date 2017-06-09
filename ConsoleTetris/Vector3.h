@@ -7,6 +7,8 @@ public:
 	double x, y, z;
 	Vector3 operator-(const Vector3& rightVector) const;
 	Vector3 operator+(const Vector3& rightVector) const;
+	void operator-=(const Vector3& rightVector);
+	void operator+=(const Vector3& rightVector);
 	bool operator==(const Vector3& rightVector) const;
 
 	inline double magnitude();

@@ -20,6 +20,18 @@ Vector3 Vector3::operator+(const Vector3& rightVector) const {
 	return Vector3(x + rightVector.x, y + rightVector.y, z + rightVector.z);
 }
 
+void Vector3::operator-=(const Vector3& rightVector) {
+	x -= rightVector.x;
+	y -= rightVector.y;
+	z -= rightVector.z;
+}
+
+void Vector3::operator+=(const Vector3& rightVector) {
+	x += rightVector.x;
+	y += rightVector.y;
+	z += rightVector.z;
+}
+
 bool Vector3::operator==(const Vector3& rightVector) const {
 	return (x == rightVector.x && y == rightVector.y && z == rightVector.z);
 }

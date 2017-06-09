@@ -18,6 +18,16 @@ Vector2 Vector2::operator+(const Vector2& rightVector) const {
 	return Vector2(x + rightVector.x, y + rightVector.y);
 }
 
+void Vector2::operator-=(const Vector2& rightVector) {
+	x -= rightVector.x;
+	y -= rightVector.y;
+}
+
+void Vector2::operator+=(const Vector2& rightVector) {
+	x += rightVector.x;
+	y += rightVector.y;
+}
+
 inline double Vector2::magnitude()
 {
 	return sqrt(sqrMagnitude());
