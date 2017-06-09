@@ -16,13 +16,13 @@
     <Filter Include="Файлы исходного кода\Engine">
       <UniqueIdentifier>{1e24909d-22e5-45ea-a8cd-d2e00c3e8047}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы ресурсов\Engine">
-      <UniqueIdentifier>{2cfcd3fc-c26f-48bd-8f26-74223a2faf9e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Файлы исходного кода\Game">
       <UniqueIdentifier>{b5cf6419-2afb-4d04-bcd6-c7e4318ab05a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы ресурсов\Game">
+    <Filter Include="Заголовочные файлы\Engine">
+      <UniqueIdentifier>{2cfcd3fc-c26f-48bd-8f26-74223a2faf9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Game">
       <UniqueIdentifier>{439991cd-8b4e-46ab-8dd1-4b4c0c352c4c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -45,16 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.h">
-      <Filter>Файлы ресурсов\Engine</Filter>
+      <Filter>Заголовочные файлы\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Graphics2D.h">
-      <Filter>Файлы ресурсов\Engine</Filter>
+      <Filter>Заголовочные файлы\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Screen.h">
-      <Filter>Файлы ресурсов\Engine</Filter>
+      <Filter>Заголовочные файлы\Engine</Filter>
     </ClInclude>
     <ClInclude Include="Vector2.h">
-      <Filter>Файлы ресурсов\Engine</Filter>
+      <Filter>Заголовочные файлы\Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
