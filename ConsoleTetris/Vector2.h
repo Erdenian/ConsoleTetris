@@ -11,6 +11,8 @@ public:
 
 	Vector2 operator-(const Vector2& rightVector) const;
 	Vector2 operator+(const Vector2& rightVector) const;
+	void operator-=(const Vector2& rightVector);
+	void operator+=(const Vector2& rightVector);
 
 	double x, y;
 };
